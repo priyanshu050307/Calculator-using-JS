@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator
+    </title>
+    <style>
+        
+        body{
+            text-align: center;
+
+        }
+        .container{
+            height: 84vh;
+            width: 90vh;
+            background-color:rgb(91, 95, 95) ;
+            margin: 40px 400px;
+            padding: 2%;
+            border-radius: 5vh;
+           
+        }
+        
+        .display{
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            
+        }
+        .button {
+            justify-content: space-around;
+            display: flex;
+            flex-wrap: wrap;
+            
+            
+        }
+        .button button{
+            height: 12vmin;
+            width: 12vmin;
+            margin: 20px 20px ;
+            font-size: 30px; 
+            border: none;
+            border-radius: 12px;
+        }
+        .button button:hover{
+            height: 12vmin;
+            width: 12vmin;
+            margin: 20px 20px ;
+            font-size: 30px; 
+            border: none;
+            border-radius: 12px;
+            background-color: lightgray;
+        }
+        .display{
+            
+            width: 84vmin;
+            height: 12vmin;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 20px;
+            background-color: lightgray;
+            font-size: 6vh;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+        <div class="display" id="display">
+        </div>
+        <div class="button">
+            <button class="bracket_open"  onclick="open_brack()" id="element">(</button>
+            <button class="bracket_close" onclick="close_brack()" id="element">)</button>
+            <button class="percent" onclick="percent()" id="element">%</button>
+            <button class="delete"  id="element" onclick="reset()" style="color: red;">AC</button>
+            <button class="add" onclick="add()" id="element">+</button>
+            <button class="9" onclick="num9()" id="element">9</button>
+            <button class="8" onclick="num8()" id="element">8</button>
+            <button class="7"  onclick="num7()" id="element">7</button>
+            <button class="6" onclick="num6()"  id="element">6</button>
+            <button class="sub" onclick="sub()" id="element">-</button>
+            <button class="5" onclick="num5()" id="element">5</button>
+            <button class="4" onclick="num4()" id="element">4</button>
+            <button class="3" onclick="num3()"  id="element">3</button>
+            <button class="2" onclick="num2()" id="element">2</button>
+            <button class="X" onclick="mul()" id="element">X</button>
+            <button class="1"  onclick="num1()" id="element">1</button>
+            <button class="0"  onclick="num0()" id="element">0</button>
+            <button class="decimal" onclick="decimal()" id="element">.</button>
+            <button class="equal" onclick="result()" id="element" style="background-color: dodgerblue; color: white;">=</button>
+            <button class="divide" onclick="div()" id="element">/</button>
+
+        </div>
+    </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
